@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sam's dev blog</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <!-- live updates -->
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav id="sidenav">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <img src="./images/bars-solid.svg" id="nav-icon" />
+    <div class="content">
+        <div class="datestamp">June 28, 2022</div>
+        <h1>Part 1: Planning my programming language</h1>
+        <div class="paragraph">Ever since I started programming, I've felt like there are
+            so many cool features that could be implemented into programming languages, that just aren't!</div>
+        <div class="paragraph">
+            From time complexity prediction, forced
+        </div>
+    </div>
+</body>
+
+<script>
+    // Open navigation
+    document.getElementById("nav-icon").onclick = () => {
+        w = getComputedStyle(document.documentElement).getPropertyValue('--nav-width');
+        document.getElementById("sidenav").style.width = w;
+        document.getElementsByTagName("html")[0].style.marginLeft = w;
+    }
+
+    // Close navigation
+    document.getElementById("closebtn").onclick = () => {
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementsByTagName("html")[0].style.marginLeft =
+            getComputedStyle(document.documentElement).getPropertyValue('--default-left-margin');
+    }
+</script>
+
+</html>
