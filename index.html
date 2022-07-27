@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>A first step into the world of programming languages</title>
 
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
     <!-- live updates -->
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
@@ -18,16 +17,19 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <nav id="sidenav">
-        <a href="javascript:void(0)" id="closebtn">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+      <a href="javascript:void(0)" id="closebtn">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
     </nav>
 
     <img src="./images/bars-solid.svg" id="nav-icon" />
@@ -36,91 +38,114 @@
       <span class="docData"> / Sam Hobson</span>
       <h1>A first step into the world of programming languages.</h1>
       <div class="paragraph">
-        Over the past month(ish), I’ve been working on a project I’ve always dreamed of undertaking: creating my own programming language.
+        Over the past month(ish), I’ve been working on a project I’ve always
+        dreamed of undertaking: creating my own programming language.
       </div>
       <div class="paragraph">
-          If you’re interested in seeing the code for yourself, check it out
-      <a href="https://github.com/Sam-Hobson/broccoli" target="_blank">here</a>!
+        If you’re interested in seeing the code for yourself, check it out
+        <a href="https://github.com/Sam-Hobson/broccoli" target="_blank">here</a
+        >!
       </div>
       <h2>Getting started</h2>
       <div class="paragraph">
-        Knowing where to start is often the most intimidating part of creating a language, so I’ll go through some of the initial decisions and steps taken towards starting a new language.
+        Knowing where to start is often the most intimidating part of creating a
+        language, so I’ll go through some of the initial decisions and steps
+        taken towards starting a new language.
       </div>
       <h2>Will our language be compiled, or interpreted?</h2>
-      <div class="paragraph">There are two main ways to turn code into action, compiling and interpreting:</div>
+      <div class="paragraph">
+        There are two main ways to turn code into action, compiling and
+        interpreting:
+      </div>
       <ul>
         <li>
           <div class="paragraph">
-            A compiler runs through the program code, figures out what it is doing, and then converts that code into "machine code".
-            This file of machine code can then be executed very quickly by a computer whenever it needs to run the program.
+            A compiler runs through the program code, figures out what it is
+            doing, and then converts that code into "machine code". This file of
+            machine code can then be executed very quickly by a computer
+            whenever it needs to run the program.
           </div>
         </li>
         <li>
           <div class="paragraph">
-            An interpreter on the other hand will step through code line by line, figuring out what the code is doing as it goes.
+            An interpreter on the other hand will step through code line by
+            line, figuring out what the code is doing as it goes.
           </div>
         </li>
       </ul>
-      <div class="paragraph">Here’s a good analogy about compilers and interpreters I've read:
+      <div class="paragraph">
+        Here’s a good analogy about compilers and interpreters I've read:
         <div class="quote">
-          A compiler will read a recipe in a cookbook, and translate it into explicit instructions for your kitchen: 
-          "Turn the stove to 180°C, then turn left 45° and open the drawer"...
+          A compiler will read a recipe in a cookbook, and translate it into
+          explicit instructions for your kitchen: "Turn the stove to 180°C, then
+          turn left 45° and open the drawer"...
           <div class="paragraph">
-            An interpreter on the other hand will read you each line of the recipe one by one, 
-            and wait for you to tell it to move onto the next line. This makes it a lot less bossy, 
-            but also leaves you a lot of room to make mistakes if you’re not careful!
+            An interpreter on the other hand will read you each line of the
+            recipe one by one, and wait for you to tell it to move onto the next
+            line. This makes it a lot less bossy, but also leaves you a lot of
+            room to make mistakes if you’re not careful!
           </div>
         </div>
       </div>
-      <br>
+      <br />
       <div class="paragraph">
-        Generally, interpreting tends to be more flexible, while compiling tends to have higher performance. 
-        But this is only scratching the surface of a very complex topic.
+        Generally, interpreting tends to be more flexible, while compiling tends
+        to have higher performance. But this is only scratching the surface of a
+        very complex topic.
       </div>
       <div class="paragraph">
-        Since I’m creating this language for the purpose of learning and experimentation, I’m not too concerned with performance,
-        so I’ll stick with an interpreter for now.
+        Since I’m creating this language for the purpose of learning and
+        experimentation, I’m not too concerned with performance, so I’ll stick
+        with an interpreter for now.
       </div>
       <div class="paragraph">
-        This is the first very important decision to make when creating a language because a lot of what comes next is affected by it!
+        This is the first very important decision to make when creating a
+        language because a lot of what comes next is affected by it!
       </div>
       <h2>Choosing a language, for your language</h2>
       <div class="paragraph">
-        Every application, even compilers and interpreters are built with some programming language,
-        and the one you choose will play a huge role in the development of your language.
+        Every application, even compilers and interpreters are built with some
+        programming language, and the one you choose will play a huge role in
+        the development of your language.
       </div>
       <div class="paragraph">
-        If you’re creating a compiled language, 
-        the most important thing to consider is how comfortable you are with the language you choose!
-        At the end of day, a few more seconds of waiting to compile millions of lines of code isn’t a big price to pay.
+        If you’re creating a compiled language, the most important thing to
+        consider is how comfortable you are with the language you choose! At the
+        end of day, a few more seconds of waiting to compile millions of lines
+        of code isn’t a big price to pay.
       </div>
       <div class="paragraph">
-        However, the story is very different with interpreters. 
-        Because an interpreter will directly run your code instead of creating an optimised file of machine code, 
-        the interpreter being slow means your language is slow.
+        However, the story is very different with interpreters. Because an
+        interpreter will directly run your code instead of creating an optimised
+        file of machine code, the interpreter being slow means your language is
+        slow.
       </div>
       <div class="paragraph">
-        I'd recommend using C, C++, or any other performant language for an interpreter.
-        Alternatively, functional languages are often very well suited for parsing, and are convenient to build with, 
-        however their immutability makes them incredibly inefficient interpreting languages.
+        I'd recommend using C, C++, or any other performant language for an
+        interpreter. Alternatively, functional languages are often very well
+        suited for parsing, and are convenient to build with, however their
+        immutability makes them incredibly inefficient interpreting languages.
       </div>
     </div>
-</body>
+  </body>
 
-<script>
+  <script>
     // Open navigation
     document.getElementById("nav-icon").onclick = () => {
-        w = getComputedStyle(document.documentElement).getPropertyValue('--nav-width');
-        document.getElementById("sidenav").style.width = w;
-        document.getElementsByTagName("html")[0].style.marginLeft = w;
-    }
+      w = getComputedStyle(document.documentElement).getPropertyValue(
+        "--nav-width"
+      );
+      document.getElementById("sidenav").style.width = w;
+      document.getElementsByTagName("html")[0].style.marginLeft = w;
+    };
 
     // Close navigation
     document.getElementById("closebtn").onclick = () => {
-        document.getElementById("sidenav").style.width = "0";
-        document.getElementsByTagName("html")[0].style.marginLeft =
-            getComputedStyle(document.documentElement).getPropertyValue('--default-left-margin');
-    }
-</script>
-
+      document.getElementById("sidenav").style.width = "0";
+      document.getElementsByTagName("html")[0].style.marginLeft =
+        getComputedStyle(document.documentElement).getPropertyValue(
+          "--default-left-margin"
+        );
+    };
+  </script>
 </html>
