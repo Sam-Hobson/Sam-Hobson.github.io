@@ -131,7 +131,7 @@ table {
 
 :root {
     --nav-width: 250px;
-    --content-width: 720px;
+    --content-width: 750px;
     --default-left-margin: 45px;
 }
 
@@ -188,15 +188,23 @@ nav {
 
 h1 {
     font-family: lato;
-    font-weight: 700;
+    font-weight: 900;
     /* text-align: center; */
     font-size: 48px;
+    padding-top: 10px;
     padding-bottom: 5px;
+}
+
+h2 {
+    font-family: lato;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 40px;
 }
 
 /* CSS doesn't support variables in media commands :( */
 /* @media only screen and (min-width: calc(var(--nav-width) + var(--content-width))) { */
-@media only screen and (min-width: calc(250px + 720px)) {
+@media only screen and (min-width: calc(250px + 750px)) {
     .content {
         padding-top: 10px;
         width: var(--content-width);
@@ -207,7 +215,7 @@ h1 {
 
 /* CSS doesn't support variables in media commands :( */
 /* @media only screen and (max-width: calc(var(--nav-width) + var(--content-width))) { */
-@media only screen and (max-width: calc(250px + 720px)) {
+@media only screen and (max-width: calc(250px + 750px)) {
     .content {
         padding-top: 10px;
         width: 100%;
@@ -216,11 +224,10 @@ h1 {
     }
 }
 
-.datestamp {
+.docData {
     font-family: lato;
     font-weight: 800;
     font-size: 16px;
-    padding-bottom: 10px;
 }
 
 .paragraph {
