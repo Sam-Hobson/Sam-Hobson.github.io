@@ -44,8 +44,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
 li,
 fieldset,
 form,
@@ -104,11 +102,6 @@ section {
 
 body {
     line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
 }
 
 blockquote,
@@ -186,6 +179,9 @@ nav {
     padding-top: 60px;
 }
 
+.content a {
+}
+
 h1 {
     font-family: lato;
     font-weight: 900;
@@ -235,4 +231,5 @@ h2 {
     font-family: lato;
     font-weight: 300;
     font-size: 24px;
+    line-height: 1.2;
 }
