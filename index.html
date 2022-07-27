@@ -62,13 +62,15 @@
         </li>
       </ul>
       <div class="paragraph">Here’s a good analogy about compilers and interpreters I've read:
-        A compiler will read a recipe in a cookbook, and translate it into explicit instructions for your kitchen: 
-        "Turn the stove to 180°C, then turn left 45° and open the drawer"...
-      </div>
-      <div class="paragraph">
-        An interpreter on the other hand will read you each line of the recipe one by one, 
-        and wait for you to tell it to move onto the next line. This makes it a lot less bossy, 
-        but also leaves you a lot of room to make mistakes if you’re not careful!
+        <div class="quote">
+          A compiler will read a recipe in a cookbook, and translate it into explicit instructions for your kitchen: 
+          "Turn the stove to 180°C, then turn left 45° and open the drawer"...
+          <div class="paragraph">
+            An interpreter on the other hand will read you each line of the recipe one by one, 
+            and wait for you to tell it to move onto the next line. This makes it a lot less bossy, 
+            but also leaves you a lot of room to make mistakes if you’re not careful!
+          </div>
+        </div>
       </div>
       <br>
       <div class="paragraph">
@@ -81,6 +83,26 @@
       </div>
       <div class="paragraph">
         This is the first very important decision to make when creating a language because a lot of what comes next is affected by it!
+      </div>
+      <h2>Choosing a language, for your language</h2>
+      <div class="paragraph">
+        Every application, even compilers and interpreters are built with some programming language,
+        and the one you choose will play a huge role in the development of your language.
+      </div>
+      <div class="paragraph">
+        If you’re creating a compiled language, 
+        the most important thing to consider is how comfortable you are with the language you choose!
+        At the end of day, a few more seconds of waiting to compile millions of lines of code isn’t a big price to pay.
+      </div>
+      <div class="paragraph">
+        However, the story is very different with interpreters. 
+        Because an interpreter will directly run your code instead of creating an optimised file of machine code, 
+        the interpreter being slow means your language is slow.
+      </div>
+      <div class="paragraph">
+        I'd recommend using C, C++, or any other performant language for an interpreter.
+        Alternatively, functional languages are often very well suited for parsing, and are convenient to build with, 
+        however their immutability makes them incredibly inefficient interpreting languages.
       </div>
     </div>
 </body>
