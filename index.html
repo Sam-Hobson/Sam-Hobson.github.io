@@ -52,7 +52,7 @@
         language, so I’ll go through some of the initial decisions and steps
         taken towards starting a new language.
       </div>
-      <h2>Will our language be compiled, or interpreted?</h2>
+      <h2>Will your language be compiled, or interpreted?</h2>
       <div class="paragraph">
         There are two main ways to turn code into action, compiling and
         interpreting:
@@ -125,6 +125,22 @@
         interpreter. Alternatively, functional languages are often very well
         suited for parsing, and are convenient to build with, however their
         immutability makes them incredibly inefficient interpreting languages.
+      </div>
+      <div class="paragraph">
+        As I’ve mentioned before, I’m not worried about the speed of my
+        language, but am more focussed on creating a language which is easy to
+        experiment with. So the functional language Haskell suits my needs well.
+      </div>
+      <h2>Design overview</h2>
+      <div class="paragraph">
+        A programming language goes through several different stages before we
+        see our final result. Each stage will add an extra layer of meaning to
+        the data, starting by identifying key operations, and then building an
+        order operations, but we will get more into these ideas as we go...
+      </div>
+      <div class="paragraph">
+        This is an illustration of the processes we will cover, right up to
+        interpreting:
       </div>
     </div>
   </body>
