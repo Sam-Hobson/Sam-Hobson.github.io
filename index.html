@@ -46,13 +46,27 @@
         <a href="https://github.com/Sam-Hobson/broccoli" target="_blank">here</a
         >!
       </div>
-      <h2>Getting started</h2>
+      <h2>Where to start</h2>
       <div class="paragraph">
         Knowing where to start is often the most intimidating part of creating a
         language, so I’ll go through some of the initial decisions and steps
-        taken towards starting a new language.
+        taken towards beginning such a project.
       </div>
-      <h2>Will your language be compiled, or interpreted?</h2>
+      <h2>Why are you making a language?</h2>
+      <div class="paragraph">
+        This it the first essential question to ask! Are you making a language
+        for fun? To learn? Is your language meant to fulfill an untouched niche?
+        Whatever the reason, its vital to consider what is important to your
+        language.
+      </div>
+      <div class="paragraph">
+        I’m making a language to learn, and play with experimental language
+        features like time complexity prediction, post-processed function
+        impurity, or strongly typed function side-effects. As we go, I’ll
+        explain how this plan impacts the decisions I make at each stage of the
+        process.
+      </div>
+      <h2>Compiled, or interpreted?</h2>
       <div class="paragraph">
         There are two main ways to turn code into action, compiling and
         interpreting:
@@ -98,10 +112,6 @@
         experimentation, I’m not too concerned with performance, so I’ll stick
         with an interpreter for now.
       </div>
-      <div class="paragraph">
-        This is the first very important decision to make when creating a
-        language because a lot of what comes next is affected by it!
-      </div>
       <h2>Choosing a language, for your language</h2>
       <div class="paragraph">
         Every application, even compilers and interpreters are built with some
@@ -124,7 +134,8 @@
         I'd recommend using C, C++, or any other performant language for an
         interpreter. Alternatively, functional languages are often very well
         suited for parsing, and are convenient to build with, however their
-        immutability makes them incredibly inefficient interpreting languages.
+        immutability makes them incredibly inefficient interpreting
+        non-functional languages.
       </div>
       <div class="paragraph">
         As I’ve mentioned before, I’m not worried about the speed of my
@@ -141,6 +152,15 @@
       <div class="paragraph">
         This is an illustration of the processes we will cover, right up to
         interpreting:
+        <div class="quote">
+          <img src="./images/step1.png" />
+          <img src="./images/arrow1.png" style="width: 150px; height: auto" />
+          <img src="./images/step2.png" />
+          <img src="./images/arrow2.png" style="width: 150px; height: auto" />
+          <img src="./images/step3.png" />
+          <img src="./images/arrow3.png" style="width: 150px; height: auto" />
+          <img src="./images/step4.png" />
+        </div>
       </div>
     </div>
   </body>
