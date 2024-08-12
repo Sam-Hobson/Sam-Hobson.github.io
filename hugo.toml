@@ -1,6 +1,6 @@
 baseURL = "https://sam-hobson.github.io/"
 theme = "risotto"
-title = "risotto demo"
+title = "Sam Hobson"
 author = "Sam Hobson"
 paginate = 3
 languageCode = "en"
@@ -18,7 +18,7 @@ sectionPagesMenu = "main"
 noindex = false
 
 [params.theme]
-palette = "gruvbox-dark"
+palette = "base16-dark"
 
 # Sidebar: about/bio
 [params.about]
@@ -56,6 +56,13 @@ identifier = "about"
 name = "About"
 url = "/about/"
 weight = 10
+
+[[menu.main]]
+identifier = "docs"
+name = "Docs"
+url = "/docs/"
+weight = 10
+
 
 [taxonomies]
 category = "categories"
